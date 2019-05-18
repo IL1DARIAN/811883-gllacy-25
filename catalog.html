@@ -11,14 +11,42 @@
           <img src="img/gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
         </a>
         <ul class="site-navigation">
-          <li><a>Каталог</a></li>
-          <li><a>Доставка и оплата</a></li>
+          <li><a>Каталог</a>
+			<ul class="site-navigation-catalog">
+				<li><a>Новинки</a></li>
+				<li class="site-navigation-item"><a>Сливочное</a></li>
+				<li class="site-navigation-item"><a></a>Щербеты</li>
+				<li class="site-navigation-item"><a>Фруктовый лед</a></li>
+				<li class="site-navigation-item"><a>Мелорин</a></li>
+			</ul>
+		  </li>
+		  <li><a>Доставка и оплата</a></li>
           <li><a>О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-navigation-search"><a>Поиск</a></li>
-          <li class="user-navigation-enter"><a>Вход</a></li>
-          <li class="user-navigation-basket"><a>Корзина</a></li>
+          <li class="user-navigation-search">
+			<form class="user-search" action="" method="get">
+				<input type="text" placeholder="Что ищем?">
+				<button type="submit"><span class="visually-hidden">Кнопка поиска</span></button>
+			</form>
+		  </li>
+          <li class="user-navigation-enter"><a href="#">Вход</a></li>
+          <li class="user-navigation-basket"><a href="#" class="basket-link"><span class="visually-hidden">Корзина</span>2 товара</a>
+			<table>
+				<tr>
+					<td><img src="img/ice-1.jpg" width="33" height="33"> Пломбир с апельсиновым джемом</td>
+					<td>1,5кг &times; 200 руб.</td>
+					<td>300 руб.</td>
+				</tr>
+				<tr>
+					<td><img src="img/ice-3.jpg" width="33" height="33"> Клубничный пломбир с присыпкой из белого шоколада</td>
+					<td>1,5кг &times; 300 руб.</td>
+					<td>450 руб.</td>
+				</tr>
+			</table>
+			<p>Итого: 750 руб.</p>
+			<a class="button" href="#">Оформить заказ</a>
+		  </li>
         </ul>
       </nav>
       <div class="site-information">

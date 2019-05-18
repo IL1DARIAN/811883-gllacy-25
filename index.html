@@ -11,14 +11,43 @@
           <img src="img/gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a>Доставка и оплата</a></li>
-          <li><a>О Компании</a></li>
+          <li>Каталог
+			<ul class="site-navigation-catalog">
+				<li><a href="#">Новинки</a></li>
+				<li class="site-navigation-item"><a href="catalog.html">Сливочное</a></li>
+				<li class="site-navigation-item"><a href="#">Щербеты</a></li>
+				<li class="site-navigation-item"><a href="#">Фруктовый лед</a></li>
+				<li class="site-navigation-item"><a href="#">Мелорин</a></li>
+			</ul>
+		  </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-navigation-search"><a>Поиск</a></li>
-          <li class="user-navigation-enter"><a>Вход</a></li>
-          <li class="user-navigation-basket"><a>Корзина</a></li>
+          <li class="user-navigation-search">
+			<form class="user-search" action="" method="get">
+				<input type="text" placeholder="Что ищем?">
+				<button type="submit"><span class="visually-hidden">Кнопка поиска</span></button>
+			</form>
+		  </li>
+          <li class="user-navigation-enter"><a class="login-link" href="#">Вход</a>
+			<form class="login-form" action="" method="post">
+				<div class="login-form-mail">
+					<label class="visually-hidden" for="email-1">Электронная почта</label>
+					<input id="email-1" type="email" placeholder="Электронная почта">
+				</div>
+				<div class="login-form-password">
+					<label class="visually-hidden" for="password">Пароль</label>
+					<input id="password" name="password" type="password" placeholder="Пароль">
+				</div>
+				<button class="button" type="submit">Войти</button>
+				<ul class="registration">
+					<li><a href="#">Забыли пароль?</a></li>
+					<li><a href="#">Новая регистрация</a></li>
+				</ul>
+			</form>
+		  </li>
+          <li class="user-navigation-basket"><a href="#" class="basket-link"><span class="visually-hidden">Корзина</span>Пусто</a></li>
         </ul>
       </nav>
       <div class="site-information">
@@ -40,13 +69,17 @@
       </section>
       <article class="blog">
         <p>Новое в нашем блоге</p>
-        <a>
+        <a href="#">
           <h3 class="blog-news">10 способов сервировки фруктовых щербетов к столу</h3>
         </a>
       </article>
       <div class="subscription">
         <p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--Здесь будет форма-->
+        <form class="subscription-form">
+			<label class="visually-hidden" for="email-2">Электронная почта</label>
+			<input id="email-2" type="email" placeholder="Электронная почта">
+			<button class="button" type="submit">Отправить</button>
+		</form>
       </div>
     </main>
     <footer class="main-footer">
@@ -60,10 +93,10 @@
       </div>
       <div class="footer-news">
         <ul class="footer-list">
-          <li class="footer-item footer-item-distributor"><a>Для поставщиков</a></li>
-          <li class="footer-item"><a>О производстве</a></li>
-          <li class="footer-item"><a>Наши документы</a></li>
-          <li class="footer-item"><a>Экологические стандарты</a></li> 
+          <li class="footer-item footer-item-distributor"><a href="#">Для поставщиков</a></li>
+          <li class="footer-item"><a href="#">О производстве</a></li>
+          <li class="footer-item"><a href="#">Наши документы</a></li>
+          <li class="footer-item"><a href="#">Экологические стандарты</a></li> 
         </ul>
       </div>
       <div class="footer-copyright">

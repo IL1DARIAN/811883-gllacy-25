@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/normolize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -11,7 +14,7 @@
 					<img src="img/gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
 				</a>
 				<ul class="site-navigation">
-					<li>Каталог
+					<li><a href="#">Каталог</a>
 						<ul class="site-navigation-catalog">
 							<li><a href="#">Новинки</a></li>
 							<li class="site-navigation-item"><a href="catalog.html">Сливочное</a></li>
@@ -32,21 +35,23 @@
 					</li>
 					<li class="user-navigation-enter">
 						<a class="login-link" href="#">Вход</a>
-						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="login-form-mail">
-								<label class="visually-hidden" for="email-1">Электронная почта</label>
-								<input id="email-1" type="email" placeholder="Электронная почта">
-							</div>
-							<div class="login-form-password">
-								<label class="visually-hidden" for="password">Пароль</label>
-								<input id="password" name="password" type="password" placeholder="Пароль">
-							</div>
-							<button class="button" type="submit">Войти</button>
-							<ul class="registration">
-								<li><a href="#">Забыли пароль?</a></li>
-								<li><a href="#">Новая регистрация</a></li>
-							</ul>
-						</form>
+						<div class="login-user">
+							<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+								<div class="login-form-mail">
+									<label class="visually-hidden" for="email-1">Электронная почта</label>
+									<input id="email-1" type="email" name="login" placeholder="Электронная почта">
+								</div>
+								<div class="login-form-password">
+									<label class="visually-hidden" for="password">Пароль</label>
+									<input id="password" name="password" type="password" placeholder="Пароль">
+								</div>
+								<button class="button" type="submit">Войти</button>
+								<ul class="registration">
+									<li><a href="#">Забыли пароль?</a></li>
+									<li><a href="#">Новая регистрация</a></li>
+								</ul>
+							</form>
+						</div>
 					</li>
 					<li class="user-navigation-basket">
 						<a href="#" class="basket-link"><span class="visually-hidden">Корзина</span>Пусто</a>
@@ -54,7 +59,7 @@
 				</ul>
 			</nav>
 			<div class="site-information">
-				<p class="site-information-timework">С 10 до 20, ежедневно</p>
+				<p>С 10 до 20, ежедневно</p>
 				<p class="site-information-callnumber">8 812 450-25-25</p>
 			</div>
 		</header>
@@ -62,39 +67,41 @@
 			<h1 class="visually-hidden">Магазин мороженного GllacyShop</h1>
 			<section class="features">
 				<h2 class="visually-hidden">Преимущества</h2>
-				<b>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</b>
+				<p>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</p>
 				<ul class="features-list">
-					<li class="features-item">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-					<li class="features-item">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-					<li class="features-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-					<li class="features-item">Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</li>
+					<li>Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+					<li>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+					<li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+					<li>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</li>
 				</ul>
 			</section>
 			<article class="blog">
 				<p>Новое в нашем блоге</p>
 				<a href="#">
-					<h3 class="blog-news">10 способов сервировки фруктовых щербетов к столу</h3>
+					<h3 class="blog-news">10 способов сервировки<br> фруктовых щербетов<br> к столу</h3>
 				</a>
 			</article>
 			<div class="subscription">
-				<p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-					<label class="visually-hidden" for="email-2">Электронная почта</label>
-					<input id="email-2" type="email" placeholder="Электронная почта">
-					<button class="button" type="submit">Отправить</button>
-				</form>
+				<div class="subscription-back">
+					<p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+					<form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+						<label class="visually-hidden" for="email-2">Электронная почта</label>
+						<input id="email-2" type="email" name="subscribe-email" placeholder="Электронная почта">
+						<button class="button" type="submit">Отправить</button>
+					</form>
+				</div>	
 			</div>
 		</main>
 		<footer class="main-footer">
-			<div class="footer-social">
-				<ul>
+			<div>
+				<ul class="footer-social">
 					<li><a class="social-button" href="#">Твитер</a></li>
 					<li><a class="social-button" href="#">Инстаграм</a></li>
 					<li><a class="social-button" href="#">Фейсбук</a></li>
 					<li><a class="social-button" href="#">Вконтакте</a></li>
 				</ul>
 			</div>
-			<div class="footer-news">
+			<div>
 				<ul class="footer-list">
 					<li class="footer-item"><a href="#">Для поставщиков</a></li>
 					<li class="footer-item"><a href="#">О производстве</a></li>
@@ -118,11 +125,11 @@
 				</div>
 				<div class="call-email">
 					<label class="visually-hidden" for="calling-email">Электронная почта</label>
-					<input type="email" id="calling-email" placeholder="Ваша почта для ответа?">
+					<input type="email" id="calling-email" name="calling-email" placeholder="Ваша почта для ответа?">
 				</div>
-				<textarea>Напишите что-нибудь</textarea>
+				<textarea name="comments">Напишите что-нибудь</textarea>
 				<button class="button" type="submit">Отправить</button>
 			</form>
 		</div>
-	</body>
+		</body>
 </html>

@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/normolize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -11,10 +14,10 @@
 					<img src="img/gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
 				</a>
 				<ul class="site-navigation">
-					<li>Каталог
+					<li class="page-focus"><a href="#">Каталог</a>
 						<ul class="site-navigation-catalog">
 							<li><a href="#">Новинки</a></li>
-							<li class="site-navigation-item"><a>Сливочное</a></li>
+							<li class="site-navigation-item"><a href="#">Сливочное</a></li>
 							<li class="site-navigation-item"><a href="#">Щербеты</a></li>
 							<li class="site-navigation-item"><a href="#">Фруктовый лед</a></li>
 							<li class="site-navigation-item"><a href="#">Мелорин</a></li>
@@ -32,21 +35,23 @@
 					</li>
 					<li class="user-navigation-enter">
 						<a class="login-link" href="#">Вход</a>
-						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="login-form-mail">
-								<label class="visually-hidden" for="email-1">Электронная почта</label>
-								<input id="email-1" type="email" placeholder="Электронная почта">
-							</div>
-							<div class="login-form-password">
-								<label class="visually-hidden" for="password">Пароль</label>
-								<input id="password" name="password" type="password" placeholder="Пароль">
-							</div>
-							<button class="button" type="submit">Войти</button>
-							<ul class="registration">
-								<li><a href="#">Забыли пароль?</a></li>
-								<li><a href="#">Новая регистрация</a></li>
-							</ul>
-						</form>
+						<div class="login-user">
+							<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+								<div class="login-form-mail">
+									<label class="visually-hidden" for="email-1">Электронная почта</label>
+									<input id="email-1" type="email" name="login" placeholder="Электронная почта">
+								</div>
+								<div class="login-form-password">
+									<label class="visually-hidden" for="password">Пароль</label>
+									<input id="password" name="password" type="password" placeholder="Пароль">
+								</div>
+								<button class="button" type="submit">Войти</button>
+								<ul class="registration">
+									<li><a href="#">Забыли пароль?</a></li>
+									<li><a href="#">Новая регистрация</a></li>
+								</ul>
+							</form>
+						</div>
 					</li>
 					<li class="user-navigation-basket">
 						<a href="#" class="basket-link"><span class="visually-hidden">Корзина</span>2 товара</a>
@@ -83,11 +88,12 @@
 			<h2>Сливочное мороженное</h2>
 			<ul class="catalog-list">
 				<li class="catalog-item">
-					<figure>
+					<div><figure>
 						<img src="img/ice-1.jpg" width="267" height="267" alt="Оранжевое мороженное">
 						<figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
 					</figure>
 					<p>310 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a></div>
 				</li>
 				<li class="catalog-item">
 					<figure>
@@ -95,6 +101,7 @@
 						<figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
 					</figure>
 					<p>380 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<figure>
@@ -102,6 +109,7 @@
 						<figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
 					</figure>
 					<p>355 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<figure>
@@ -109,6 +117,7 @@
 						<figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
 					</figure>
 					<p>415 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<figure>
@@ -116,6 +125,7 @@
 						<figcaption>Сливочное с брусничным джемом</figcaption>
 					</figure>
 					<p>325 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<figure>
@@ -123,6 +133,7 @@
 						<figcaption>Сливочно-черничное с цельными ягодами черники</figcaption>
 					</figure>
 					<p>410 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<figure>
@@ -130,6 +141,7 @@
 						<figcaption>Сливочно-лимонное с карамельной присыпкой</figcaption>
 					</figure>
 					<p>375 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<figure>
@@ -137,6 +149,7 @@
 						<figcaption>Сливочное с шоколадной стружкой</figcaption>
 					</figure>
 					<p>320 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a>
 				</li>
 				<li class="catalog-item">
 					<figure>
@@ -144,40 +157,44 @@
 						<figcaption>Сливочно-ванильное с кусочками шоколада</figcaption>
 					</figure>
 					<p>440 &#x20bd;<span>/кг</span></p>
+					<a class="button">Быстрый просмотр</a>
 				</li>
-				<li class="catalog-item">
+				<li class="catalog-item" href="#">
 					<figure>
 						<img src="img/ice-10.jpg" width="267" height="267" alt="Голубое мороженное">
 						<figcaption>Сливочное с ментоловым сиропом</figcaption>
 					</figure>
 					<p>435 &#x20bd;<span>/кг</span></p>
+					<a class="button">Быстрый просмотр</a>
 				</li>
-				<li class="catalog-item">
+				<li class="catalog-item" href="#">
 					<figure>
 						<img src="img/ice-11.jpg" width="267" height="267" alt="Белое мороженное с кусочками шоколада">
 						<figcaption>Сливочное с кусочками черного шоколада</figcaption>
 					</figure>
 					<p>355 &#x20bd;<span>/кг</span></p>
+					<a class="button">Быстрый просмотр</a>
 				</li>
-				<li class="catalog-item">
+				<li class="catalog-item" href="#">
 					<figure>
 						<img src="img/ice-12.jpg" width="267" height="267" alt="Зеленое мороженное">
 						<figcaption>Сливочное с мятным сиропом</figcaption>
 					</figure>
 					<p>420 &#x20bd;<span>/кг</span></p>
+					<a class="button" href="#">Быстрый просмотр</a>
 				</li>
 			</ul>
 		</main>
 		<footer class="main-footer">
-			<div class="footer-social">
-				<ul>
+			<div>
+				<ul  class="footer-social">
 					<li><a class="social-button" href="#">Твитер</a></li>
 					<li><a class="social-button" href="#">Инстаграм</a></li>
 					<li><a class="social-button" href="#">Фейсбук</a></li>
 					<li><a class="social-button" href="#">Вконтакте</a></li>
 				</ul>
 			</div>
-			<div class="footer-news">
+			<div>
 				<ul class="footer-list">
 					<li class="footer-item"><a href="#">Для поставщиков</a></li>
 					<li class="footer-item"><a href="#">О производстве</a></li>

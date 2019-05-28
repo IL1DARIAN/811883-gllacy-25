@@ -8,7 +8,7 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header">
+		<header class="main-header container">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
 					<img src="img/gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
@@ -63,7 +63,7 @@
 				<p class="site-information-callnumber">8 812 450-25-25</p>
 			</div>
 		</header>
-		<main>
+		<main class="container">
 			<h1 class="visually-hidden">Магазин мороженного GllacyShop</h1>
 			<section class="features">
 				<h2 class="visually-hidden">Преимущества</h2>
@@ -75,25 +75,27 @@
 					<li>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</li>
 				</ul>
 			</section>
-			<article class="blog">
-				<p>Новое в нашем блоге</p>
-				<a href="#">
-					<h3 class="blog-news">10 способов сервировки<br> фруктовых щербетов<br> к столу</h3>
-				</a>
-			</article>
-			<div class="subscription">
-				<div class="subscription-back">
-					<p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-					<form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-						<label class="visually-hidden" for="email-2">Электронная почта</label>
-						<input id="email-2" type="email" name="subscribe-email" placeholder="Электронная почта">
-						<button class="button" type="submit">Отправить</button>
-					</form>
-				</div>	
+			<div class="blog-and-form">
+				<article class="blog">
+					<p>Новое в нашем блоге</p>
+					<a href="#">
+						<h3 class="blog-news">10 способов сервировки<br> фруктовых щербетов<br> к столу</h3>
+					</a>
+				</article>
+				<div class="subscription">
+					<div class="subscription-back">
+						<p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+						<form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+							<label class="visually-hidden" for="email-2">Электронная почта</label>
+							<input id="email-2" type="email" name="subscribe-email" placeholder="Электронная почта">
+							<button class="button" type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</main>
-		<footer class="main-footer">
-			<div>
+		<footer class="main-footer container">
+			<div class="network-social">
 				<ul class="footer-social">
 					<li><a class="social-button" href="#">Твитер</a></li>
 					<li><a class="social-button" href="#">Инстаграм</a></li>
@@ -101,7 +103,7 @@
 					<li><a class="social-button" href="#">Вконтакте</a></li>
 				</ul>
 			</div>
-			<div>
+			<div class="network-information">
 				<ul class="footer-list">
 					<li class="footer-item"><a href="#">Для поставщиков</a></li>
 					<li class="footer-item"><a href="#">О производстве</a></li>

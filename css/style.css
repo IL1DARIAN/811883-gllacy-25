@@ -5,7 +5,7 @@ body {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: regular;
+	font-weight: 400;
 	color: #fff;
 	
 	background-color: #8996a6;
@@ -52,7 +52,7 @@ body {
 .user-navigation button {
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #fff;
 	text-decoration: none;
 	
@@ -126,7 +126,7 @@ body {
 .features p {
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: medium;
+	font-weight: 500;
 }
 
 .features .features-list {
@@ -148,7 +148,7 @@ body {
 .blog p {
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #323232;
 }
 
@@ -194,22 +194,50 @@ body {
 	line-height: 16px;
 }
 
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
 .catalog-item {
+	width: 267px;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 40px;
+	
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: medium;
+	font-weight: 500;
+	text-align: center;
 	color: #fff;
 }
 
 .catalog-item img {
+	margin: 0;
+	padding: 0;
+	
 	border-radius: 50%;
 }
 
+.catalog-item figure {
+	margin: 0;
+	padding: 0;
+}
+
 .catalog-item figcaption {
+	margin: 0;
+	padding: 0;
+	
 	text-decoration: underline;
 }
 
 .catalog-item p {
+	margin: 0;
+	padding: 0;
+	
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: bold;

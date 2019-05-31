@@ -22,6 +22,8 @@ body {
 }
 
 .site-navigation {
+	display: flex;
+	
 	width: 400px;
 	margin-right: auto;
 	

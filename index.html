@@ -14,17 +14,17 @@
 					<img src="img/gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
 				</a>
 				<ul class="site-navigation">
-					<li><a href="#">Каталог</a>
+					<li class="catalog-popap navigation-background"><a href="#">Каталог</a>
 						<ul class="site-navigation-catalog">
-							<li><a href="#">Новинки</a></li>
-							<li class="site-navigation-item"><a href="catalog.html">Сливочное</a></li>
-							<li class="site-navigation-item"><a href="#">Щербеты</a></li>
-							<li class="site-navigation-item"><a href="#">Фруктовый лед</a></li>
-							<li class="site-navigation-item"><a href="#">Мелорин</a></li>
+							<li class="site-navigation-item"><a href="#">Новинки</a></li>
+							<li><a href="catalog.html">Сливочное</a></li>
+							<li><a href="#">Щербеты</a></li>
+							<li><a href="#">Фруктовый лед</a></li>
+							<li><a href="#">Мелорин</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">О Компании</a></li>
+					<li class="navigation-background"><a href="#">Доставка и оплата</a></li>
+					<li class="navigation-background"><a href="#">О Компании</a></li>
 				</ul>
 				<ul class="user-navigation">
 					<li class="user-navigation-search">
@@ -45,11 +45,13 @@
 									<label class="visually-hidden" for="password">Пароль</label>
 									<input id="password" name="password" type="password" placeholder="Пароль">
 								</div>
-								<button class="button" type="submit">Войти</button>
-								<ul class="registration">
-									<li><a href="#">Забыли пароль?</a></li>
-									<li><a href="#">Новая регистрация</a></li>
-								</ul>
+								<div class="enter-and-registration">
+									<button class="button" type="submit">Войти</button>
+									<ul class="registration">
+										<li><a href="#">Забыли пароль?</a></li>
+										<li><a href="#">Новая регистрация</a></li>
+									</ul>
+								</div>
 							</form>
 						</div>
 					</li>
@@ -69,10 +71,10 @@
 				<h2 class="visually-hidden">Преимущества</h2>
 				<p>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</p>
 				<ul class="features-list">
-					<li>Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-					<li>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-					<li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-					<li>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</li>
+					<li class="features-item">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+					<li class="features-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+					<li class="features-item">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+					<li class="features-item">Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</li>
 				</ul>
 			</section>
 			<div class="blog-and-form">
@@ -97,17 +99,17 @@
 		<footer class="main-footer container">
 			<div class="network-social">
 				<ul class="footer-social">
-					<li><a class="social-button" href="#">Твитер</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Вконтакте</a></li>
+					<li><div class="social-btn"></div><a class="social-button tw-btn" href="#">Твитер</a></li>
+					<li><div class="social-btn"></div><a class="social-button inst-btn" href="#">Инстаграм</a></li>
+					<li><div class="social-btn"></div><a class="social-button face-btn" href="#">Фейсбук</a></li>
+					<li><div class="social-btn"></div><a class="social-button vk-btn" href="#">Вконтакте</a></li>
 				</ul>
 			</div>
 			<div class="network-information">
 				<ul class="footer-list">
 					<li class="footer-item"><a href="#">Для поставщиков</a></li>
-					<li class="footer-item"><a href="#">О производстве</a></li>
 					<li class="footer-item"><a href="#">Наши документы</a></li>
+					<li class="footer-item"><a href="#">О производстве</a></li>
 					<li class="footer-item"><a href="#">Экологические стандарты</a></li> 
 				</ul>
 			</div>
@@ -115,7 +117,7 @@
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
 					<img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
 				</a>
-				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
+				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</p>
 			</div>
 		</footer>
 		<div class="calling-user">

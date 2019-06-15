@@ -60,12 +60,14 @@
 						<div class="ice-user-basket">	
 							<table class="basket-of-ice">
 								<tr>
+									<td><button><img width="11" height="11" src="img/delete-btn.svg" alt="Кнопка удаления"></button></td>
 									<td><img src="img/ice-1.jpg" width="33" height="33" alt="Апельсиновый пломбир"></td>
 									<td>Пломбир с апельсиновым джемом</td>
 									<td>1,5кг &times; <span>200 руб.<span></td>
 									<td>300 руб.</td>
 								</tr>
 								<tr>
+									<td><button><img width="11" height="11" src="img/delete-btn.svg" alt="Кнопка удаления"></td>
 									<td><img src="img/ice-3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
 									<td class="basket-of-ice-line">Клубничный пломбир с присыпкой из белого шоколада</td>
 									<td class="basket-of-ice-line">1,5кг &times; <span>300 руб.<span></td>
@@ -92,6 +94,82 @@
 				<li>Сливочное</li>
 			</ul>
 			<h2 class="catalog-name">Сливочное мороженное</h2>
+			<form class="selection" action="https://echo.htmlacademy.ru" method="get">
+				<div class="selection-sorting">
+					<label for="selection-sorting">Сортировка:</label>
+					<select class="selected-variant" id="selection-sorting" name="selection-sorting">
+						<option>по популярности</option>
+						<option>сначала недорогие</option>
+						<option>сначала дорогие</option>
+						<option>по жирности</option>
+					</select>
+				</div>
+				<div class="selection-price">
+					<div>
+						<label for="selection-price">Цена:</label>
+						<output name="priceoutput">100 руб. - 500 руб.</output>
+					</div>
+					<div class="selection-range">
+						<input type="range" id="selection-price" name="selection-price" min="0" max="700" step="100">
+					</div>
+				</div>
+				<div class="selection-fat">
+					<p>Жирность:</p>
+					<div>
+						<label>
+							<input class="visually-hidden" type="radio" name="selection-fat" value="0%">
+							<span class="radio-indicator"></span>
+							0%
+						</label>
+						<label>
+							<input class="visually-hidden" type="radio" name="selection-fat" value="10%" checked>
+							<span class="radio-indicator"></span>
+							10%
+						</label>
+						<label>
+							<input class="visually-hidden" type="radio" name="selection-fat" value="<30%">
+							<span class="radio-indicator"></span>
+							до 30%
+						</label>
+						<label>
+							<input class="visually-hidden" type="radio" name="selection-fat" value=">30%">
+							<span class="radio-indicator"></span>
+							выше 30%
+						</label>
+					</div>
+				</div>
+				<div class="selection-filler">
+					<p>Наполнители:</p>
+					<div class="filler-checkbox">
+						<label>
+							<input class="visually-hidden" type="checkbox" name="chocolate" value="chocolate" checked>
+							<span class="checkbox-indicator"></span>
+							шоколадные
+						</label>
+						<label>
+							<input class="visually-hidden" type="checkbox" name="shugar" value="shugar" checked>
+							<span class="checkbox-indicator"></span>
+							сахарные присыпки
+						</label>
+						<label>
+							<input class="visually-hidden" type="checkbox" name="fruits" value="fruits">
+							<span class="checkbox-indicator"></span>
+							фрукты
+						</label>
+						<label>
+							<input class="visually-hidden" type="checkbox" name="syrup" value="syrup">
+							<span class="checkbox-indicator"></span>
+							сиропы
+						</label>
+						<label>
+							<input class="visually-hidden" type="checkbox" name="jam" value="jam">
+							<span class="checkbox-indicator"></span>
+							джемы
+						</label>
+					</div>
+				</div>
+				<button type="submit">Применить</button>
+			</form>
 			<ul class="catalog-list">
 				<li class="catalog-item">
 					<div class="catalog-background">
@@ -237,6 +315,15 @@
 						<a class="button" href="#">Быстрый просмотр</a>
 					</div>
 				</li>
+			</ul>
+			<ul class="road-number">
+				<li class="road-number-item"><button type="button" disabled><img  width="8" height="12" src="img/icon-right-small.svg"></button></li>
+				<li class="road-number-item"><button type="button" class="road-number-active">1</button></li>
+				<li class="road-number-item"><button type="button">2</button></li>
+				<li class="road-number-item"><button type="button">3</button></li>
+				<li class="road-number-item"><button type="button">4</button></li>
+				<li class="road-number-item"><button type="button">5</button></li>
+				<li class="road-number-item"><button type="button"><img  width="8" height="12" src="img/icon-right-small.svg"></button></li>
 			</ul>
 		</main>
 		<footer class="main-footer container">

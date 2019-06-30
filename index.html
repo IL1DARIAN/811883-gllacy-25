@@ -5,7 +5,7 @@
 		<title>HTML Academy: Глейси</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link href="css/normolize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-mini.css" rel="stylesheet">
 	</head>
 	<body>
 		<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -19,17 +19,17 @@
 						<img src="img/gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
 					</a>
 					<ul class="site-navigation">
-						<li class="catalog-popap navigation-background"><a href="#"><span>Каталог</span></a>
+						<li class="catalog-popap navigation-background"><a href="full-catalog.html"><span>Каталог</span></a>
 							<ul class="site-navigation-catalog">
-								<li class="site-navigation-item"><a href="#">Новинки</a></li>
+								<li class="site-navigation-item"><a href="catalog-new.html">Новинки</a></li>
 								<li><a href="catalog.html">Сливочное</a></li>
-								<li><a href="#">Щербеты</a></li>
-								<li><a href="#">Фруктовый лед</a></li>
-								<li><a href="#">Мелорин</a></li>
+								<li><a href="catalog-cherbet.html">Щербеты</a></li>
+								<li><a href="frootice.html">Фруктовый лед</a></li>
+								<li><a href="melorin.html">Мелорин</a></li>
 							</ul>
 						</li>
-						<li class="navigation-background"><a href="#"><span>Доставка и оплата</span></a></li>
-						<li class="navigation-background"><a href="#"><span>О Компании</span></a></li>
+						<li class="navigation-background"><a href="buy-and-give.html"><span>Доставка и оплата</span></a></li>
+						<li class="navigation-background"><a href="about-me.html"><span>О Компании</span></a></li>
 					</ul>
 					<ul class="user-navigation">
 						<li class="user-navigation-search">
@@ -39,7 +39,7 @@
 							</form>
 						</li>
 						<li class="user-navigation-enter">
-							<a class="login-link" href="#">Вход</a>
+							<a class="login-link" href="enter-form.html">Вход</a>
 							<div class="login-user">
 								<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 									<div class="login-form-mail">
@@ -53,15 +53,15 @@
 									<div class="enter-and-registration">
 										<button class="button" type="submit">Войти</button>
 										<ul class="registration">
-											<li><a href="#">Забыли пароль?</a></li>
-											<li><a href="#">Новая регистрация</a></li>
+											<li><a href="restore-password.html">Забыли пароль?</a></li>
+											<li><a href="new-registration.html">Новая регистрация</a></li>
 										</ul>
 									</div>
 								</form>
 							</div>
 						</li>
 						<li class="user-navigation-basket">
-							<a href="#" class="basket-link"><span class="visually-hidden">Корзина</span>Пусто</a>
+							<a href="basket.html" class="basket-link"><span class="visually-hidden">Корзина</span>Пусто</a>
 						</li>
 					</ul>
 				</nav>
@@ -83,15 +83,15 @@
 					<ul class="slider-list">
 						<li class="slider-item slide" id="slide1">
 							<h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
-							<a class="button slide-button" href="#">Давайте оба!</a>
+							<a class="button slide-button" href="basket-full.html">Давайте оба!</a>
 						</li>
 						<li class="slider-item slide" id="slide2">
 							<h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
-							<a class="button slide-button" href="#">Давайте оба!</a>
+							<a class="button slide-button" href="basket-full.html">Давайте оба!</a>
 						</li>
 						<li class="slider-item slide" id="slide3">
 							<h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
-							<a class="button slide-button" href="#">Давайте оба!</a>
+							<a class="button slide-button" href="basket-full.html">Давайте оба!</a>
 						</li>
 					</ul>
 				</section>
@@ -99,61 +99,53 @@
 					<div class="stock-raspberries">
 						<h3>Малинка даром!</h3>
 						<p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-						<a class="button" href="#">Хочу варенье!</a>
+						<a class="button" href="basket-full.html">Хочу варенье!</a>
 					</div>
 					<div class="stock-chocolate">
 						<h3>Шоколадки даром!</h3>
 						<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-						<a class="button" href="#">Хочу шоколадки!</a>
+						<a class="button" href="basket-full.html">Хочу шоколадки!</a>
 					</div>
 				</section>
 				<ul class="catalog-list">
 					<li class="catalog-item hit-item">
-						<div class="catalog-background">
-						</div>
 						<div>
 							<figure>
 								<img src="img/ice-1.jpg" width="267" height="267" alt="Оранжевое мороженное">
 								<figcaption><a href="#"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a></figcaption>
 							</figure>
-							<p>310 &#x20bd;<span class="disain-price">/кг</span></p>
-							<a class="button" href="#">Быстрый просмотр</a>
+							<p>310&#x20bd;<span class="disain-price">/кг</span></p>
+							<a class="button" href="ice-1.html">Быстрый просмотр</a>
 						</div>
 					</li>
 					<li class="catalog-item hit-item">
-						<div class="catalog-background">
-						</div>
 						<div>
 							<figure>
 								<img src="img/ice-2.jpg" width="267" height="267" alt="Шоколадное мороженное">
 								<figcaption><a href="#"><span>Сливочно-кофейное с кусочками шоколада</span></a></figcaption>
 							</figure>
-							<p>380 &#x20bd;<span class="disain-price">/кг</span></p>
-							<a class="button" href="#">Быстрый просмотр</a>
+							<p>380&#x20bd;<span class="disain-price">/кг</span></p>
+							<a class="button" href="ice-2.html">Быстрый просмотр</a>
 						</div>
 					</li>
 					<li class="catalog-item hit-item">
-						<div class="catalog-background">
-						</div>
 						<div>
 							<figure>
 								<img src="img/ice-3.jpg" width="267" height="267" alt="Розовое с белыми сердечками">
 								<figcaption><a href="#"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a></figcaption>
 							</figure>
-							<p>355 &#x20bd;<span class="disain-price">/кг</span></p>
-							<a class="button" href="#">Быстрый просмотр</a>
+							<p>355&#x20bd;<span class="disain-price">/кг</span></p>
+							<a class="button" href="ice-3.html">Быстрый просмотр</a>
 						</div>
 					</li>
 					<li class="catalog-item hit-item">
-						<div class="catalog-background">
-						</div>
 						<div>
 							<figure>
 								<img src="img/ice-4.jpg" width="267" height="267" alt="Карамельное мороженное">
 								<figcaption><a href="#"><span>Сливочное крем-брюле с карамельной подливкой</span></a></figcaption>
 							</figure>
-							<p>415 &#x20bd;<span class="disain-price">/кг</span></p>
-							<a class="button" href="#">Быстрый просмотр</a>
+							<p>415&#x20bd;<span class="disain-price">/кг</span></p>
+							<a class="button" href="ice-4.html">Быстрый просмотр</a>
 						</div>
 					</li>
 				</ul>
@@ -170,7 +162,7 @@
 				<div class="blog-and-form">
 					<article class="blog">
 						<p>Новое в нашем блоге</p>
-						<a href="#">
+						<a href="new-paper.html">
 							<h3 class="blog-news">10 способов сервировки фруктовых щербетов к столу</h3>
 						</a>
 					</article>
@@ -194,7 +186,7 @@
 					<p>Для заказов по телефону:</p>
 					<p class="contacts-bold"><b>8 812 450-25-25</b></p> 
 					<p>(с 10 до 20 ежедневно)</p>
-					<a class="button button-calling-form" href="#">Форма обратной связи</a> 
+					<a class="button button-calling-form" href="calling-user.html">Форма обратной связи</a> 
 				</div>
 			</div>
 			<footer>
@@ -202,10 +194,10 @@
 			<div class="main-footer">
 				<div class="network-social">
 					<ul class="footer-social">
-						<li class="social-icon"><div class="social-btn"></div><a class="social-button tw-btn" href="#">Твитер</a></li>
-						<li class="social-icon"><div class="social-btn"></div><a class="social-button inst-btn" href="#">Инстаграм</a></li>
-						<li class="social-icon"><div class="social-btn"></div><a class="social-button face-btn" href="#">Фейсбук</a></li>
-						<li class="social-icon"><div class="social-btn"></div><a class="social-button vk-btn" href="#">Вконтакте</a></li>
+						<li class="social-icon"><a class="social-button tw-btn" href="#">Твитер</a></li>
+						<li class="social-icon"><a class="social-button inst-btn" href="#">Инстаграм</a></li>
+						<li class="social-icon"><a class="social-button face-btn" href="#">Фейсбук</a></li>
+						<li class="social-icon"><a class="social-button vk-btn" href="#">Вконтакте</a></li>
 					</ul>
 				</div>
 				<div class="network-information">

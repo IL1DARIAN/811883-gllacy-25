@@ -887,7 +887,9 @@ input[type="radio"].visually-hidden {
 	margin-right: auto;
 	padding: 23px 20px ;
 	
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+	        box-sizing: border-box;
 	border-radius: 15px;
 	background-color: #fff;
 	background-image: url("../img/news.jpg");
@@ -996,10 +998,11 @@ input[type="radio"].visually-hidden {
 .map-and-contacts {
 	position: relative;
 	margin: 0 auto;
+	margin-bottom: -10px;
 	padding: 0;
 	
 	width: 1200px;
-	min-height: 430px;
+	min-height: 440px;
 	
 	background-image: url("../img/map-ice.svg"), url("../img/ice-shadow.png"), url("../img/map.jpg");
 	background-repeat: no-repeat, no-repeat, no-repeat;
@@ -1043,6 +1046,7 @@ input[type="radio"].visually-hidden {
 
 .contacts b {
 	display: inline-block;
+	vertical-align: middle;
 	
 	font-size: 18px;
 	line-height: 24px;
@@ -1055,6 +1059,7 @@ input[type="radio"].visually-hidden {
 
 .contacts a {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	margin-top: 24px;
 	padding-left: 27px;
@@ -1199,6 +1204,7 @@ input[type="radio"].visually-hidden {
 
 .selection-price label {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0;
 	padding: 0;
 	margin-left: 16px;
@@ -1674,6 +1680,7 @@ input[type="radio"].visually-hidden {
 
 .slide-button {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 12px 44px;
 	
 	font-weight: bold;
@@ -1750,19 +1757,22 @@ input[type="radio"].visually-hidden {
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
-	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+	        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
 	opacity: 0.8;
 	z-index: 20;
 }
 
 .social-button:hover,
 .social-button:focus {
-	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+	        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
 	opacity: 1;
 }
 
 .social-button:active {
-	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+	        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
 	opacity: 0.7;
 }
 
@@ -1818,6 +1828,7 @@ input[type="radio"].visually-hidden {
 
 .footer-item a {
 	display: inline-block;
+	vertical-align: middle;
 	margin-bottom: 4px;
 }
 
@@ -1939,6 +1950,18 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
+@-webkit-keyframes shaker {
+	0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);transform: translateX(10px);}
+}
+
+@keyframes shaker {
+	0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);transform: translateX(10px);}
+}
+
 .calling-user {
 	display: none;
 	position: fixed;
@@ -1953,6 +1976,17 @@ input[type="radio"].visually-hidden {
 	background-color: #f8f7f4;
 	
 	z-index: 120;
+}
+
+.modal-show {
+	display: block;
+	-webkit-animation: bounce 1s;
+	        animation: bounce 1s;
+}
+
+.modal-error {
+	-webkit-animation: shaker 0.4s;
+	        animation: shaker 0.4s;
 }
 
 .close-button {
@@ -1986,7 +2020,7 @@ input[type="radio"].visually-hidden {
 
 .form-calling-user p {
 	display: inline-block;
-	
+	vertical-align: middle;
 	margin: 0;
 	margin-top: 20px;
 	padding: 0;
@@ -2068,5 +2102,19 @@ input[type="radio"].visually-hidden {
 .calling-user textarea:valid {
 	color: #323232;
 	
-	background-color: #fff
+	background-color: #fff;
+}
+
+@-webkit-keyframes bounce {
+	0% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
+	70% {-webkit-transform: translateY(40px);transform: translateY(40px);}
+	85% {-webkit-transform: translateY(-20px);transform: translateY(-20px);}
+	100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+
+@keyframes bounce {
+	0% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
+	70% {-webkit-transform: translateY(40px);transform: translateY(40px);}
+	85% {-webkit-transform: translateY(-20px);transform: translateY(-20px);}
+	100% {-webkit-transform: translateY(0);transform: translateY(0);}
 }
